@@ -45,6 +45,11 @@ y = np.zeros((y0.size, N+1))
 t[0] = t0
 y[:,0] = y0
 
+# Obs:
+# y[i,j] betyder rad i, kolumn j
+# Att byta ut ett index mot : betyder "alla index".
+# y[:,j] betyder "alla rader, kolumn j"
+
 for j in range(N):
     t[j+1] = t[j] + h
 
